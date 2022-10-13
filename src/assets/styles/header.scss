@@ -1,0 +1,67 @@
+@import './app.scss';
+
+
+//header
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 96px;
+    padding: 32px 32px 0px 32px;
+}
+
+//first navbar options
+.NavHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.NavItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    border-right: 1px solid black;
+    padding: 0px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.NavItem:last-child {
+    border-right: 0px;
+    padding-right: 0px;
+}
+
+//second navbar options
+.NavHeaderSecond {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    height: fit-content;
+}
+
+.NavItemArrow {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    border-right: 1px solid black;
+    padding-right: 4px;
+    align-items: center;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-delay: 100ms;
+}
+
+.NavItemArrowText {
+    font-weight: 300;
+    font-size: $sizeSmall;
+    cursor: pointer;
+}
+
+.UpArrow {
+    transform: rotate(180deg);
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-delay: 100ms;
+}
