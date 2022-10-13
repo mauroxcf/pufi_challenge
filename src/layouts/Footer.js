@@ -8,8 +8,9 @@ import { ReactComponent as SecurityIcon } from '../assets/svg/SecurityIcon.svg';
 import { ReactComponent as FacebookIcon } from '../assets/svg/FacebookIcon.svg';
 import { ReactComponent as InstagramIcon } from '../assets/svg/InstagramIcon.svg';
 import { ReactComponent as TwitterIcon } from '../assets/svg/TwitterIcon.svg';
+import { ReactComponent as StarIcon } from '../assets/svg/StarIcon.svg';
 
-function Footer() {
+function Footer({ footerData }) {
 	return (
 		<div className='Footer'>
 			<div className='FooterContainer'>
@@ -18,16 +19,14 @@ function Footer() {
 						<PufiLogo width='96' height='64' />
 					</div>
 					<div className='NavFooterColumn'>
-						<p>PUFI RAIN</p>
-						<p>PUFI PUFF</p>
-						<p>PUFI CART</p>
-						<p>PUFI NAP</p>
+						{footerData[0].map((navItem) => (
+							<p key={navItem.id}>{navItem.label}</p>
+						))}
 					</div>
 					<div className='NavFooterColumn'>
-						<p>CONTACTO</p>
-						<p>AYUDA</p>
-						<p>COMO COMPRAR</p>
-						<p>TÉRMINOS Y CONDICIONES</p>
+						{footerData[1].map((navItem) => (
+							<p key={navItem.id}>{navItem.label}</p>
+						))}
 					</div>
 					<div className='NavFooterColumn'>
 						<p>COMPRA 100% SEGURA</p>
@@ -44,7 +43,13 @@ function Footer() {
 						<InstagramIcon width='24' height='24' />
 					</div>
 				</div>
-				<div>Footer dos</div>
+				<div className='NavFooterSecond'>
+					<p>PUFI Copyright 2017 - Todos los derechos reservados</p>
+					<div className='BrandWithIcon'>
+						<StarIcon width='24' height='24' />
+						<p>BRANDLIVE</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

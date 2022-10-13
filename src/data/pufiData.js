@@ -10,4 +10,19 @@ const headerNavbarItems = [
 	{ label: 'PUFI NAP', icon: <PufiNap />, id: 'NAP' },
 ];
 
-export { headerNavbarItems };
+const footerNavbarColumnItems = [
+	[
+		{ label: 'PUFI PUFF', id: 'PUFF' },
+		{ label: 'PUFI RAIN', id: 'RAIN' },
+		{ label: 'PUFI CART', id: 'CART' },
+		{ label: 'PUFI NAP', id: 'NAP' },
+	],
+	[
+		{ label: 'CONTACTO', id: 'CONTACTO' },
+		{ label: 'AYUDA', id: 'AYUDA' },
+		{ label: 'COMO COMPRAR', id: 'COMPRAR' },
+		{ label: 'TÉRMINOS Y CONDICIONES', id: 'TÉRMINOS' },
+	],
+];
+
+export { headerNavbarItems, footerNavbarColumnItems };

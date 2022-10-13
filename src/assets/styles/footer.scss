@@ -14,7 +14,7 @@
     gap: 32px;
 }
 
-//Navbar footer content
+//Navbar footer content one
 .NavFooter {
     display: flex;
     flex-direction: row;
@@ -47,4 +47,21 @@
     svg {
         cursor: pointer;
     }
+}
+
+//Navbar footer content two
+.NavFooterSecond {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: $sizeSmall;
+    font-weight: 300;
+    border-top: 1px solid black;
+}
+
+.BrandWithIcon {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
 }
