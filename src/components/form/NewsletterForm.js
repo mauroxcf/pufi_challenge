@@ -15,8 +15,7 @@ function NewsletterForm() {
 		email: Yup.string()
 			.email('email invalido')
 			.min(2, 'Muy corto!')
-			.max(50, 'Muy largo!')
-			.required('Requerido'),
+			.max(50, 'Muy largo!'),
 	});
 	return (
 		<div>
