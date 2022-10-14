@@ -1,0 +1,30 @@
+.NewsLetterContainer  {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+}
+
+.NewsLetterTitle {
+    font-size: 12px;
+    color: lightgray;
+}
+
+.SuscribeText {
+    font-size: 48px;
+}
+
+.FormBar {
+    padding: 12px;
+    min-width: 300px;
+    width: 40%;
+}
+
+.ErrorTextForm {
+    color:red
+}

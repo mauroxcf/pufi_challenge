@@ -7,6 +7,7 @@ import '../assets/styles/main.scss';
 //UI
 import CarouselWithImgAndText from '../components/ui/CarouselWithImgAndText';
 import ProductAndDescription from '../components/ui/ProductAndDescription';
+import Newsletter from '../components/ui/Newsletter';
 
 function Main({ carouselData, productDetailsWithImage }) {
 	return (
@@ -16,7 +17,7 @@ function Main({ carouselData, productDetailsWithImage }) {
 				<ProductAndDescription key={product.id} productDetails={product} />
 			))}
 			<div></div>
-			<div></div>
+			<Newsletter />
 		</div>
 	);
 }
