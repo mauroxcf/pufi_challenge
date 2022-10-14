@@ -12,6 +12,7 @@ import {
 	footerNavbarColumnItems,
 	ImagesAndTextCarousel,
 	productDetailsWithImage,
+	instagramPictures,
 } from './data/pufiData';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 			<Main
 				carouselData={ImagesAndTextCarousel}
 				productDetailsWithImage={productDetailsWithImage}
+				instagramPictures={instagramPictures}
 			/>
 			<Footer footerData={footerNavbarColumnItems} />
 		</div>

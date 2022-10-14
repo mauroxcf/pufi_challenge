@@ -101,9 +101,19 @@ const productDetailsWithImage = [
 	},
 ];
 
+const instagramPictures = [
+	{ alt: 'inst1', src: PufiCartProduct, id: 'inst1' },
+	{ alt: 'inst2', src: PufiNapProduct, id: 'inst2' },
+	{ alt: 'inst3', src: PufiPuffProduct, id: 'inst3' },
+	{ alt: 'inst4', src: PufiRainProduct, id: 'inst4' },
+	{ alt: 'inst5', src: PufiCartProduct, id: 'inst5' },
+	{ alt: 'inst6', src: PufiNapProduct, id: 'inst6' },
+];
+
 export {
 	headerNavbarItems,
 	footerNavbarColumnItems,
 	ImagesAndTextCarousel,
 	productDetailsWithImage,
+	instagramPictures,
 };

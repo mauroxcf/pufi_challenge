@@ -1,0 +1,28 @@
+.InstagramContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 32px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.InstagramGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2px;
+    width: 40%;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        height:stretch;
+    }
+}
