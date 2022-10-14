@@ -35,6 +35,8 @@ Main.propTypes = {
 	carouselData: PropTypes.array,
 	/* contents each product to show with a image, title and description */
 	productDetailsWithImage: PropTypes.array,
+	/* contents a few images to show */
+	instagramPictures: PropTypes.array,
 };
 
 export default Main;

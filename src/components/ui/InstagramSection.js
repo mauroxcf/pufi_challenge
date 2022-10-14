@@ -1,8 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 //Assets
 import '../../assets/styles/instagramsection.scss';
 
+/**
+ * It takes an array of objects as a prop, and then maps over that array to create an image tag for
+ * each object in the array.
+ * @returns An array of objects.
+ */
 function InstagramSection({ instagramPictures }) {
 	return (
 		<div className='InstagramContainer'>
@@ -16,5 +22,10 @@ function InstagramSection({ instagramPictures }) {
 		</div>
 	);
 }
+
+InstagramSection.propTypes = {
+	/* contents a few images to show */
+	instagramPictures: PropTypes.array,
+};
 
 export default InstagramSection;
