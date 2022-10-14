@@ -11,13 +11,17 @@ import {
 	headerNavbarItems,
 	footerNavbarColumnItems,
 	ImagesAndTextCarousel,
+	productDetailsWithImage,
 } from './data/pufiData';
 
 function App() {
 	return (
 		<div className='App'>
 			<Header headerData={headerNavbarItems} />
-			<Main carouselData={ImagesAndTextCarousel} />
+			<Main
+				carouselData={ImagesAndTextCarousel}
+				productDetailsWithImage={productDetailsWithImage}
+			/>
 			<Footer footerData={footerNavbarColumnItems} />
 		</div>
 	);

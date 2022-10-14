@@ -1,0 +1,63 @@
+.ProductDescriptionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+        width: 50%;
+    }
+
+    div {
+        width: 50%;
+    }
+}
+
+.ReverseContainer {
+    flex-direction: row-reverse;
+}
+
+.ProductDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 30%;
+    }
+
+    .ProductTitle {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    hr {
+        border-top: 2px solid lightgray;
+        width: 48px;
+    }
+
+    .ProductText {
+        font-size: 16px;
+        font-weight: 600;
+        color: lightgray;
+    }
+}
+
+.SeeMoreContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    color: lightgrey;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    svg {
+        transform: rotate(-90deg);
+    }
+
+}
