@@ -22,7 +22,7 @@ function CarouselWithImgAndText({ carouselData }) {
 		<div className='CarouselContainer'>
 			<Slider {...settings}>
 				{carouselData.map((carouselItem) => (
-					<div className='CarouselSingleImg'>
+					<div className='CarouselSingleImg' key={carouselItem.id}>
 						<img src={carouselItem.src} alt={carouselItem.alt} />
 						<div className='CarouselInsideContent'>
 							<p>{carouselItem.label}</p>
