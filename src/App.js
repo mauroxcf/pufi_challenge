@@ -7,13 +7,17 @@ import Main from './layouts/Main';
 import './assets/styles/app.scss';
 
 //BL
-import { headerNavbarItems, footerNavbarColumnItems } from './data/pufiData';
+import {
+	headerNavbarItems,
+	footerNavbarColumnItems,
+	ImagesAndTextCarousel,
+} from './data/pufiData';
 
 function App() {
 	return (
 		<div className='App'>
 			<Header headerData={headerNavbarItems} />
-			<Main />
+			<Main carouselData={ImagesAndTextCarousel} />
 			<Footer footerData={footerNavbarColumnItems} />
 		</div>
 	);
