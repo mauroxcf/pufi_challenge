@@ -9,6 +9,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+/**
+ * It takes in an array of objects, maps over the array, and returns a div with an image and text.
+ * @returns A React component that renders a Slider component from the react-slick library.
+ */
 function CarouselWithImgAndText({ carouselData }) {
 	const settings = {
 		dots: true,

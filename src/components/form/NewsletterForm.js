@@ -5,6 +5,11 @@ import * as Yup from 'yup';
 //Assets
 import '../../assets/styles/newsletter.scss';
 
+/**
+ * The function NewsletterForm() returns a Formik form that has an email field, and when the form is
+ * submitted, it alerts the user with the email they entered.
+ * @returns A Formik component with a Form component inside of it.
+ */
 function NewsletterForm() {
 	const formValidationSchema = Yup.object().shape({
 		email: Yup.string()

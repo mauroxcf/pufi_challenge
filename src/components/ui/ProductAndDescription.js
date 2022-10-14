@@ -5,6 +5,11 @@ import PropTypes from 'prop-types';
 import '../../assets/styles/productAndDescription.scss';
 import { ReactComponent as Arrow } from '../../assets/svg/Arrow.svg';
 
+/**
+ * It takes in a prop called productDetails, and returns a div with a className that depending on whether
+ * the reverse property of productDetails is true or false
+ * @returns A React component.
+ */
 function ProductAndDescription({ productDetails }) {
 	return (
 		<div

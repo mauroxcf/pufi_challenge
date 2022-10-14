@@ -4,6 +4,10 @@ import React from 'react';
 import '../../assets/styles/newsletter.scss';
 import NewsletterForm from '../form/NewsletterForm';
 
+/**
+ * renders NewsletterForm component.
+ * @returns a tittle with some text and finally a form to save the email.
+ */
 function Newsletter() {
 	return (
 		<div className='NewsLetterContainer'>

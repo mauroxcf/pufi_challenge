@@ -9,6 +9,13 @@ import CarouselWithImgAndText from '../components/ui/CarouselWithImgAndText';
 import ProductAndDescription from '../components/ui/ProductAndDescription';
 import Newsletter from '../components/ui/Newsletter';
 
+/**
+ * It takes in two props, carouselData and productDetailsWithImage, and returns  a
+ * CarouselWithImgAndText component, ProductAndDescription components, and a Newsletter
+ * component.
+ * @returns The return s three components being rendered. A carousel with images, a few
+ * descriptions of the product and a newsletter form
+ */
 function Main({ carouselData, productDetailsWithImage }) {
 	return (
 		<div className='MainContent'>

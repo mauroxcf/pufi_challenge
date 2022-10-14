@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../assets/styles/header.scss';
 
+/**
+ * It takes in a label and an icon, and returns a div with the icon and label.
+ * @returns A React component.
+ */
 function NavbarItem({ label, icon }) {
 	return (
 		<div className='NavItem'>
